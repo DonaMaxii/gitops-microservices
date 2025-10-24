@@ -1,7 +1,7 @@
 
-# Online Boutique - Deployment de cluster Kubernetes com ArgoCD
+# 👗👜 Online Boutique - Deployment de cluster Kubernetes com ArgoCD
 
-<img width="784" height="348" alt="thumbnail" src="https://github.com/user-attachments/assets/5caaf57d-d634-4ab3-bf3e-b1e40ce6287f" />
+<img width="784" height="348" alt="thumbnail" src="https://github.com/user-attachments/assets/ab025a4b-5901-4878-b066-3cba8551fb11" />
 
 Olá! Este projeto tem o intuito de demonstrar o deployment de uma aplicação web através de um cluster Kubernetes local com práticas de GitOps, com a ferramenta ArgoCD.
 

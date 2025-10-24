@@ -1,7 +1,7 @@
 
 # Online Boutique - Deployment de cluster Kubernetes com ArgoCD
 
-![Online Boutique Thumbnail](./screenshots/thumbnail.png)
+<img width="784" height="348" alt="thumbnail" src="https://github.com/user-attachments/assets/5caaf57d-d634-4ab3-bf3e-b1e40ce6287f" />
 
 Olá! Este projeto tem o intuito de demonstrar o deployment de uma aplicação web através de um cluster Kubernetes local com práticas de GitOps, com a ferramenta ArgoCD.
 
@@ -72,7 +72,7 @@ Para iniciar o cluster Kubernetes no minikube, basta rodar o comando:
     minikube start
 >
 
-![Minikube start](./screenshots/screenshot_0.png)
+<img width="1440" height="900" alt="screenshot_0" src="https://github.com/user-attachments/assets/243c366d-d9a1-40ce-8d27-ed7b7088d14d" />
 
 Assim, o minikube iniciará um cluster, disponibilizando o kubectl para interagir com o mesmo ao final:
 
@@ -107,7 +107,7 @@ Para acessar o servidor API do ArgoCD, pode ser utilizado um port-forward:
     kube port-forward svc/argocd-server -n argocd 8080:443
 >
 
-![ArgoCD](./screenshots/screenshot_1.png)
+<img width="1440" height="900" alt="screenshot_1" src="https://github.com/user-attachments/assets/ad433268-5eee-4e7f-9356-03b42a98c510" />
 
 Para o primeiro acesso, é preciso informar a senha inicial auto gerada pelo ArgoCD, que pode ser visualizada com o seguinte comando:
 
@@ -145,7 +145,7 @@ Para fazer o deploy da aplicação:
 
 - Acesse o ArgoCD e clique em “New App”;
 
-![ArgoCD](./screenshots/screenshot_2.png)
+<img width="1440" height="900" alt="screenshot_2" src="https://github.com/user-attachments/assets/183d1498-4c4f-408c-98aa-5d2d2672f41e" />
 
 Na etapa *"GENERAL"*:
 
@@ -155,7 +155,7 @@ Na etapa *"GENERAL"*:
 
 - Em Sync Policy, é possível escolher “manual” para sincronizar manualmente, ou “auto-sync” para sincronização automática;
 
-![ArgoCD](./screenshots/screenshot_3.png)
+<img width="1440" height="900" alt="screenshot_3" src="https://github.com/user-attachments/assets/2fb234c7-f863-4e61-9605-392aec82dcbb" />
 
 Na etapa *"SOURCE"*:
 
@@ -165,7 +165,7 @@ Na etapa *"SOURCE"*:
 
 - Em PATH, defina k8s;
 
-![ArgoCD](./screenshots/screenshot_4.png)
+<img width="1440" height="900" alt="screenshot_4" src="https://github.com/user-attachments/assets/91ebbdb7-98a7-4f2c-bca4-3d3dba152ee3" />
 
 Em *"DESTINATION"*:
 
@@ -187,7 +187,7 @@ Após isso, volte ao ArgoCD e clique no botão “Create” para iniciar o deplo
     minikube kubectl — get all -n online-boutique
 >
 
-![ArgoCD](./screenshots/screenshot_5.png)
+<img width="1440" height="900" alt="screenshot_5" src="https://github.com/user-attachments/assets/278fad3d-7826-4ec0-a55f-40bf920386fc" />
 
 Por fim, a aplicação sincronizada deixará pendente somente o objeto do tipo LoadBalancer, por estar rodando em um cluster local. Para acessar no navegador:
 
@@ -197,7 +197,7 @@ Por fim, a aplicação sincronizada deixará pendente somente o objeto do tipo L
 
 ## 👗👜 Considerações finais
 
-![ArgoCD](./screenshots/screenshot_6.png)
+<img width="1440" height="900" alt="screenshot_6" src="https://github.com/user-attachments/assets/2a6eb8d0-fcde-45e0-aada-487ae07a0cb4" />
 
 Caso apareça o site de compras Online Boutique, parabéns! A aplicação está sincronizada com o repositório GitOps e funcionando perfeitamente em um cluster local Kubernetes via minikube.
 
